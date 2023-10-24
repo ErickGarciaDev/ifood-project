@@ -1,6 +1,13 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
+:root{
+    --color_white: #ffffff;
+    --color_black: #000000;
+    --color_red: #E81D19;
+    --color_green: #4EA571;
+    --color_gray:#808080;
+}
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +24,9 @@ header {
     padding: 40px;
     align-items: center;
     height: 120px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.062);
+    /* width: 120%; */
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.062); */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 header nav {
@@ -30,12 +39,15 @@ header nav a {
     align-items: center;
     text-decoration: none;
     margin-left: 20px;
-    color: black;
+    color: var(--color_black);
+
 }
 
 header nav a:hover {
-    color: red;
+    color: var(--color_red);
 }
+
+
 
 header nav a li {
     list-style: none;
@@ -53,14 +65,65 @@ header > input[type="search"]:focus {
     outline: none;
 } 
 
-header > span {
+.search-box{
+    display:flex;
+    align-items: center;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.096);
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;  
+}
+
+.search-btn{
+    color:var(--color_white);
+    float: right;
+    width: 40px;
+    height: 40px;
+    border: 50px;
+    background:var(--color_red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+    border-radius: 40px;
+   
+}
+
+.search-txt{
+    border:none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color:var(--color_black);
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+.search-box:hover >.search-txt{
+    width: 240px;
+    padding: 0 6px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.search-box:hover >.search-btn{
+    background:var(--color_white);
+    color: var(--color_red);
+    
+}
+
+/* header > span {
     display: inline-flex;
     border-radius: 5px 0 0 5px;
     margin-left: 50px;
     padding-right: 5px;
     background-color: rgba(128, 128, 128, 0.096);
     height: 100%;
-}
+} */
 
 .navIcons {
     padding-right: 5px;
@@ -70,8 +133,19 @@ header > span {
 
 #address {
     display: flex;
-    margin-left: 300px;
+    /* margin-left: 300px; */
     align-items: center;
+    gap: 10px;
+    
+}
+
+#address a{
+   box-decoration-break: none;
+   color:var(--color_black);
+}
+
+#address a:hover{
+    color:var(--color_red);
 }
 
 #profile {
@@ -93,7 +167,7 @@ header > span {
 }
 
 #titleContainer > h1 {
-    color: #05930B;
+    color: var(--color_green);
     font-size: 70px;
     font-variant: small-caps;
 }
@@ -110,14 +184,16 @@ header > span {
     width: 250px;
     height: 70px;
     font-size: 20px;
-    background-color: #ff0000a8;
-    color: white;
+    background-color: var(--color_red);
+    /* background-color: #ff0000a8; */
+    color: var(--color_white);
     font-weight: bold;
     cursor: pointer;
 }
 
 #titleContainer > button:hover {
-    background-color: rgb(233, 29, 29);
+    
+    background-color: #ff0000a8;
 }
 
 #foodPic {
@@ -138,13 +214,13 @@ footer {
     display: flex;
 }
 
-#copyright svg {
+/* #copyright svg {
     margin-right: 20px;
-}
+} */
 
 #copyright p {
     font-size: 12px;
-    color: gray;
+    color: var(--color_gray);
     line-height: 2.5;
 }
 
@@ -158,6 +234,6 @@ footer {
 
 #faq h4 {
     margin-left: 50px;
-    color: rgb(82, 80, 80);
+    color: var(--color_gray);
 }
 
