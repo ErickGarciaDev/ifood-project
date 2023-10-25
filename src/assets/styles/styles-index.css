@@ -279,8 +279,6 @@ footer .footer-container a{
     text-align:center;
 }
 
-
-/* Estilos para dispositivos com largura de tela menor que 768px (Celulares) */
 @media screen and (max-width: 1192px) {
    body {
     width: 100%;
@@ -291,7 +289,6 @@ footer .footer-container a{
       height: auto;
       align-items: start;
       justify-content: space-between;
-      min-width: 402px;
     }
   
     header nav {
