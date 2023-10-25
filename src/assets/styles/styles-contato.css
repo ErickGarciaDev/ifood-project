@@ -179,13 +179,13 @@ h1 {
 #feedback form input {
     margin-top: 20px;
     height: 40px;
-    width: 500px;
+    width: 80%;
 }
 
 #feedback textarea {
     margin-top: 20px;
     margin-left: 47px;
-    width: 500px;
+    width: 80%;
     height: 200px;
 }
 
@@ -294,10 +294,10 @@ footer .footer-container a{
 }
 
 @media screen and (max-width: 1700px) {
-
-    body {
-        width: 100%;
-    }
+   
+   body {
+    width: 100%;
+   } 
 
     h1 {
         text-align: center;
@@ -311,6 +311,7 @@ footer .footer-container a{
 
     #feedback form {
         margin-bottom: 50px;
+        min-width: 350px;
     }
 
 
@@ -320,6 +321,7 @@ footer .footer-container a{
         margin-right: 0;
     }
 
+ 
     footer {
         width: 100%;
         margin-top: 40px;
@@ -330,13 +332,12 @@ footer .footer-container a{
 }
 
 @media screen and (max-width: 1192px) {
- 
+
      header {
        padding: 15px;
        height: auto;
        align-items: start;
        justify-content: space-between;
-       min-width: 402px;
      }
    
      header nav {
@@ -382,7 +383,7 @@ footer .footer-container a{
      }
 
      #feedback form {
-        width: 500px;
+        width: 100%;
     }
 
     #feedback form input {
