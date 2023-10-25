@@ -383,12 +383,12 @@ footer .footer-container a{
         width: 300px;
     }
    
-     footer {
-       margin-top: 40px;
-       padding-top: 40px;
-       min-height: 200px;
-       min-width: 510px;
-       flex-direction: column;
-     }
+    footer {
+        margin-top: 40px;
+        padding-top: 40px;
+        min-height: 200px;
+        min-width: 662px;
+        flex-direction: column;
+      }
  }
    

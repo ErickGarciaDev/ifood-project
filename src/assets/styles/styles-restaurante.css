@@ -377,12 +377,12 @@ footer .footer-container a{
      }
     
      footer {
-       margin-top: 40px;
-       padding-top: 40px;
-       min-height: 200px;
-       min-width: 510px;
-       flex-direction: column;
-     }
+        margin-top: 40px;
+        padding-top: 40px;
+        min-height: 200px;
+        min-width: 662px;
+        flex-direction: column;
+      }
  }
 
  @media screen and (max-width: 800px) { 
