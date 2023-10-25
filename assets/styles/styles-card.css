@@ -12,6 +12,7 @@
     --color_gray3:#3E3E3E;
     --color_yellow:#FCBB00;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -257,9 +258,8 @@ footer{
 footer .footer-container{
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 3rem 3.5rem;
-    gap: 2rem;
-
 }
 
 footer .footer-container img{
@@ -317,6 +317,7 @@ footer .footer-container a{
 
 /* FOOTER 2 */
 .footer-segundo{
+   padding: 10px; 
    background-color: var(--color_gray);
    color: var(--color_white);
    justify-content: center; 
@@ -337,5 +338,120 @@ footer .footer-container a{
 }
 
 
+@media screen and (max-width: 1192px) {
+    body {
+     height: 2260px;
+    }
+ 
+     header {
+       padding: 15px;
+       height: auto;
+       align-items: start;
+       justify-content: space-between;
+       min-width: 402px;
+     }
+   
+     header nav {
+       flex-direction: column;
+       font-size: 14px;
+     }
+   
+     header nav a {
+       margin: 5px 0;
+     }
+   
+     #informationContainer {
+         height: 40px;
+         align-items: center;
+     }
+   
+     .search-box {
+       margin: 20px 0;
+     }
+ 
+     .search-txt{
+         border:none;
+         outline: none;
+         color:var(--color_black);
+         font-size: 12px;
+         transition: 0.4s;
+         line-height: 3.5;
+         width: 0;
+     }
+     
+     .search-box:hover .search-txt{
+         width: 160px;
+         padding: 0 6px;
+         border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+     }
+ 
+     .search-btn {
+         margin-right: 5px;
+     }
+   
+     #profile {
+       margin: 20px 0;
+     }
+
+     .main-primeiro {
+        min-width: 410px;
+     }
+
+     .main-banner-cardapio{
+        display: block;
+        width: 404px;
+     }
+
+     .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+     }
+
+     .card {
+        width: 350px;
+        height: 520px;
+        margin: 50px 0;
+     }
+
+     .card img {
+        display: block;
+        width: 100%;
+     }
+   
+     footer {
+       margin-top: 40px;
+       padding-top: 40px;
+       min-height: 200px;
+       min-width: 510px;
+       flex-direction: column;
+     }
+ }
+
+ @media screen and (max-width: 800px) { 
+
+    body {
+        height: 1350px;
+    }
+
+    .card-container {
+        min-width: 500px;
+        display: flex;
+        flex-direction: column;
+}
+
+    .card:first-of-type {
+        margin-top: 50px;
+ }
+
+    .card {
+        width: 360px;
+        height: 520px;
+        margin: 20px 0;
+    }
+
+}
+   
 
 /* Estilos para dispositivos com largura de tela menor que 768px (Celulares) */
