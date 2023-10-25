@@ -263,7 +263,6 @@ footer .footer-container a{
  footer .footer-container i{
     transition: .4s;
     margin-right: 10px;
-    /* para aumentar os icones */
     font-size: 30px;
  }
 
@@ -295,6 +294,11 @@ footer .footer-container a{
 }
 
 @media screen and (max-width: 1700px) {
+
+    body {
+        width: 100%;
+    }
+
     h1 {
         text-align: center;
     }
@@ -309,6 +313,7 @@ footer .footer-container a{
         margin-bottom: 50px;
     }
 
+
     #feedback img {
         width: 500px;
         height: 300px;
@@ -317,9 +322,6 @@ footer .footer-container a{
 }
 
 @media screen and (max-width: 1192px) {
-    body {
-     height: 1630px;
-    }
  
      header {
        padding: 15px;
@@ -383,12 +385,17 @@ footer .footer-container a{
         width: 300px;
     }
    
+    #feedback img {
+        width: 300px;
+        height: 300px;
+    }
+
     footer {
+        min-width: 300px;
         margin-top: 40px;
         padding-top: 40px;
-        min-height: 200px;
-        min-width: 662px;
         flex-direction: column;
+        font-size: 50%;
       }
  }
    
