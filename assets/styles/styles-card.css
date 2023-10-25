@@ -216,12 +216,14 @@ header nav a li {
     padding: 10px 30px;
     font-weight: bold;
     color: var(--color_red);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .botao:hover{
     background-color: var(--color_red);
     color: var(--color_white);
-    border: none;
 }
 
 .card-botao{
@@ -453,5 +455,3 @@ footer .footer-container a{
 
 }
    
-
-/* Estilos para dispositivos com largura de tela menor que 768px (Celulares) */
