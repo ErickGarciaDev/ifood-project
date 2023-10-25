@@ -8,6 +8,9 @@
     --color_red2:#770d0b;
     --color_green: #4EA571;
     --color_gray:#808080;
+    --color_gray2:#717171;
+    --color_gray3:#3E3E3E;
+    --color_yellow:#FCBB00;
 }
 * {
     margin: 0;
@@ -29,7 +32,7 @@ header {
     align-items: center;
     justify-content: space-between;
     height: 120px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.082);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header nav {
@@ -139,15 +142,108 @@ header nav a li {
 }
 
 /* MAIN1 */
+.main-primeiro{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-banner-cardapio{
+    height:30vh;
+    position:absolute;
+    z-index:1;
+}
+
 .video-header{
     width: 100%;
     height: 40vh;
-    /* position:fixed; */
-    /* z-index: -1; */
     top: 0%;
-    /* left: 0%; */
     right: 0%;
     object-fit: cover;    
+}
+
+/* MAIN 2 */
+.card-container{
+    display:flex;
+    justify-content: center;
+    gap:15px;
+    
+}
+
+.card{
+    width: 300px;
+    height: 480px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+.card img{
+    width: 300px;
+    height: 20%;
+}
+
+.card-texto{
+    text-align: center;
+    color:var(--color_gray3);
+}
+
+.card-texto span{
+    color: var(--color_yellow);
+    font-weight: bold;
+}
+
+#card-descricao{
+    font-size: 16px;
+    text-align: justify;
+    padding: 8px 20px;
+}
+.card-valores{
+    padding: 8px 20px;
+    color:var(--color_gray3);
+}
+
+.card-preco{
+  padding-bottom: 8px;
+  color: var(--color_green);
+  font-weight: bold;
+
+}
+
+.botao{
+    padding: 10px 30px;
+    font-weight: bold;
+    color: var(--color_red);
+}
+
+.botao:hover{
+    background-color: var(--color_red);
+    color: var(--color_white);
+    border: none;
+}
+
+.card-botao{
+    display:flex;
+    justify-content:center;
+    margin-top: 10px;
+}
+
+.card-contador{
+    font-weight:bold;
+    align-items: center;
+    margin-left: 110px;
+    font-size: 25px;
+}
+
+.card-contador i{
+    cursor: pointer;
+    color: var(--color_red);
+    
+}
+
+.card-contador i:hover{
+    color:var(--color_red2);
 }
 
 
