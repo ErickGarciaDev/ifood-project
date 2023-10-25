@@ -21,11 +21,10 @@ body {
 
 header {
     display: flex;
-    padding: 40px;
+    padding: 50px;
     align-items: center;
+    justify-content: space-between;
     height: 120px;
-    /* width: 120%; */
-    /* border-bottom: 1px solid rgba(0, 0, 0, 0.062); */
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -53,28 +52,15 @@ header nav a li {
     list-style: none;
 }
 
-header > input[type="search"] {
-    width: 443px;
-    height: 100%;
-    border: none;
-    background-color: rgba(128, 128, 128, 0.096);
-    border-radius: 0 5px 5px 0;
+#informationContainer {
+    display: flex;
 }
 
-header > input[type="search"]:focus {
-    outline: none;
-} 
-
 .search-box{
-    display:flex;
     align-items: center;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
     background: rgba(255, 255, 255, 0.096);
-    height: 40px;
     border-radius: 40px;
-    padding: 10px;  
+    margin-right: 100px;  
 }
 
 .search-btn{
@@ -94,15 +80,12 @@ header > input[type="search"]:focus {
 
 .search-txt{
     border:none;
-    background: none;
     outline: none;
-    float: left;
-    padding: 0;
     color:var(--color_black);
-    font-size: 16px;
+    font-size: 12px;
     transition: 0.4s;
     line-height: 40px;
-    width: 0px;
+    width: 0;
 }
 
 .search-box:hover >.search-txt{
@@ -116,15 +99,6 @@ header > input[type="search"]:focus {
     
 }
 
-/* header > span {
-    display: inline-flex;
-    border-radius: 5px 0 0 5px;
-    margin-left: 50px;
-    padding-right: 5px;
-    background-color: rgba(128, 128, 128, 0.096);
-    height: 100%;
-} */
-
 .navIcons {
     padding-right: 5px;
     height: 20px;
@@ -133,7 +107,6 @@ header > input[type="search"]:focus {
 
 #address {
     display: flex;
-    /* margin-left: 300px; */
     align-items: center;
     gap: 10px;
     
@@ -152,9 +125,15 @@ header > input[type="search"]:focus {
     margin-left: 30px;
 }
 
-#local {
-    margin-left: 5px;
+#local-entrega {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.096);
+    cursor: pointer;
 }
+
+
 
 #newIfood {
     display: flex;
@@ -214,9 +193,10 @@ footer {
     display: flex;
 }
 
-/* #copyright svg {
-    margin-right: 20px;
-} */
+#copyright svg {
+    margin-right: 10px;
+}
+
 
 #copyright p {
     font-size: 12px;
@@ -235,5 +215,12 @@ footer {
 #faq h4 {
     margin-left: 50px;
     color: var(--color_gray);
+}
+
+@media (max-width: 11px) {
+    
+    body {
+        background-color: blue;
+    }
 }
 
