@@ -167,47 +167,44 @@ header nav a li {
 
 
 main{
-    display: grid; 
-    grid-template-columns: repeat(4,1fr); 
-    
+    display: flex; 
 }
 
 .restaurantes-principal {
     display: flex;
-    flex-direction: row; 
     width: 100%;
+    justify-content: space-between;
     color: var(--color_gray3);
-    padding-top: 50px;
-    padding-bottom: 90px;
-    padding-left: 50px;
-    gap:50px;
-   
-}
-
-.restaurantes-principal h1{
-    display: flex;
-    position: absolute;
-    margin-top: 10px;
-    margin-left:30px ;
-}
-
-.restaurantes-principal img{ 
-    clip-path: circle(50%);
-    width:200px;
-    height: 200px;
-    object-fit: cover;
+    padding: 50px;
 }
 
 .sessao-restaurantes{
-    width: 100%;
     display: flex;
-    place-items: center;
-    gap:3.75em;
+    padding: 20px;
+    transition: transform .5s;
 }
 
 
-.sessao-restaurantes a h1{
-    text-decoration:none;
+.sessao-restaurantes a {
+    text-decoration: none;
+}
+
+.sessao-restaurantes figcaption {
+    font-weight: bold;
+    font-size: 25px;
+    color: var(--color_green);
+    text-align: center;
+}
+
+.sessao-restaurantes:hover {
+    transform: translateY(-15px);
+}
+
+
+.sessao-restaurantes img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
 }
 
 
@@ -365,24 +362,20 @@ footer .footer-container a{
         width: 404px;
      }
 
-     .card-container {
+     .restaurantes-principal {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        justify-items: center;
      }
 
-     .card {
-        width: 350px;
-        height: 520px;
-        margin: 50px 0;
+     .sessao-restaurantes {
+        width: 400px;
      }
 
-     .card img {
-        display: block;
-        width: 100%;
+     .sessao-restaurantes img {
+        width: 300px;
+        height: 300px;
      }
-   
+    
      footer {
        margin-top: 40px;
        padding-top: 40px;
@@ -398,21 +391,22 @@ footer .footer-container a{
         height: 1350px;
     }
 
-    .card-container {
-        min-width: 500px;
+    .restaurantes-principal {
         display: flex;
         flex-direction: column;
-}
+        align-items: center;
+     }
 
-    .card:first-of-type {
-        margin-top: 50px;
- }
+     .sessao-restaurantes {
+        padding: 0;
+        width: 200px;
+        margin-top: 40px;
+     }
 
-    .card {
-        width: 360px;
-        height: 520px;
-        margin: 20px 0;
-    }
+     .sessao-restaurantes img {
+        width: 200px;
+        height: 200px;
+     }
 
 }
    
